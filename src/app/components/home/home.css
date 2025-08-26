@@ -1,0 +1,83 @@
+/* Full-page section */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f9fafb;
+  color: #111827;
+  padding: 2rem;
+}
+
+/* Hero Section */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: #2563eb; /* Blue highlight */
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+button,
+a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+/* Primary button */
+a[routerLink="/projects"] {
+  background: #2563eb;
+  color: #fff;
+}
+
+a[routerLink="/projects"]:hover {
+  background: #1e40af;
+}
+
+/* Secondary button */
+a[routerLink="/contact"] {
+  background: #1f2937;
+  color: #fff;
+}
+
+a[routerLink="/contact"]:hover {
+  background: #111827;
+}
+
+/* About Section */
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+section p {
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+a[routerLink="/about"] {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+a[routerLink="/about"]:hover {
+  text-decoration: underline;
+}

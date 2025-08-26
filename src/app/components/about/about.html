@@ -1,0 +1,22 @@
+<section>
+  <div class="about-container">
+    <h1>About Me</h1>
+    <p>{{ bio }}</p>
+
+    <h2>My Interests</h2>
+    <ul>
+      <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p>
+      Currently studying <strong>Computer Science</strong> at 
+      <strong>{{ university }}</strong>, expected graduation: <strong>{{ graduationYear }}</strong>.
+    </p>
+
+    <div class="links">
+      <a routerLink="/projects">View My Projects</a>
+      <a routerLink="/contact">Get in Touch</a>
+    </div>
+  </div>
+</section>
